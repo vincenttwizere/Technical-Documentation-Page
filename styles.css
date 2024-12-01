@@ -7,6 +7,7 @@ body {
     font-size: 15.36px;
     display: flex;
     flex-direction: row;
+    overflow-y: auto;
 }
 
 
@@ -19,7 +20,8 @@ body {
     padding: 20px 30px;
     border-right: 10px solid black;
     z-index: 10;
-    box-sizing: border-box; 
+    /* overflow-y: auto; */
+
 }
 
 .nav-link{
@@ -27,9 +29,11 @@ body {
     
 }
 #main-doc {
-    margin-left: 270px;
+    margin-left: 320px;
     padding: 20px;
-    width: calc(100% - 270px);
+    width: calc(100% - 320px);
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .main-section {
@@ -81,3 +85,33 @@ li {
         width: 100%;
     }
 }
+
+/* other styles */
+/* Style the navbar */
+#navbar {
+    width: 300px;
+    background-color: red;
+    position: fixed;
+    height: 100vh;
+    padding: 20px 30px;
+    border-left: 10px solid black;
+    z-index: 10;
+    box-sizing: border-box;
+    top: 0; /* Make sure it's at the top */
+    left: 0; /* Position at the left of the screen */
+    overflow-y: auto; /* Allow vertical scrolling inside the navbar if needed */
+}
+
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main content section */
+
+
+
+/* Additional sections with some space */
+/* .main-section {
+    margin-bottom: 20px;
+} */
