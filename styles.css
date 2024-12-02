@@ -1,26 +1,34 @@
 /* Basic Styling */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
+    color: rgb(77, 78, 83);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 15.36px;
     display: flex;
-    flex-direction: row;
     overflow-y: auto;
+
 }
 
 
 #navbar {
-    width: 300px;
-    background-color: red;
+    width: 320px;
+    background-color: white;
     position: fixed;
     scroll-behavior: smooth;
     height: 100vh;
-    padding: 20px 30px;
-    border-right: 10px solid black;
+    padding: 0 30px;
+    border-right: 4px solid #99A2A2;
     z-index: 10;
-    /* overflow-y: auto; */
+    box-sizing: border-box;
+    /* top: 0; 
+    left: 0; */
+    overflow-y: auto;
 
 }
 
@@ -29,9 +37,9 @@ body {
     
 }
 #main-doc {
-    margin-left: 320px;
+    margin-left: 340px;
     padding: 20px;
-    width: calc(100% - 320px);
+    width: calc(100% - 340px);
     height: 100vh;
     overflow-y: auto;
 }
@@ -42,7 +50,7 @@ body {
 
 header {
     font-size: 28.8px;
-    font-weight: bold;
+    font-weight: 400;
     color: #333;
 }
 
@@ -86,32 +94,3 @@ li {
     }
 }
 
-/* other styles */
-/* Style the navbar */
-#navbar {
-    width: 300px;
-    background-color: red;
-    position: fixed;
-    height: 100vh;
-    padding: 20px 30px;
-    border-left: 10px solid black;
-    z-index: 10;
-    box-sizing: border-box;
-    top: 0; /* Make sure it's at the top */
-    left: 0; /* Position at the left of the screen */
-    overflow-y: auto; /* Allow vertical scrolling inside the navbar if needed */
-}
-
-/* Smooth scrolling for the whole page */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Main content section */
-
-
-
-/* Additional sections with some space */
-/* .main-section {
-    margin-bottom: 20px;
-} */
