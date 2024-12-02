@@ -22,7 +22,6 @@ body {
     position: fixed;
     scroll-behavior: smooth;
     height: 100vh;
-    padding: 0 30px;
     border-right: 4px solid #99A2A2;
     z-index: 10;
     box-sizing: border-box;
@@ -51,6 +50,11 @@ header {
     color: #333;
 }
 
+#navbar header {
+    padding-top: 20px;
+    border-bottom: 10px solid #99A2A2;
+}
+
 p, code {
     font-size: 1rem;
     line-height: 1.6;
@@ -76,6 +80,9 @@ li {
     padding: 10px;
     color: #333;
     text-decoration: none;
+    margin-bottom: 30px solid red;
+
+    width: 100%;
 }
 
 .nav-link:hover {
@@ -100,3 +107,18 @@ li {
     }
 }
 
+#navbar a {
+    padding: 8px 30px;
+    margin-bottom: 10px; /* Space between the links */
+    border-bottom: 1px solid #ccc; /* Creates a line below each link */
+    
+  }
+
+  /* Optional: remove the border on the last link */
+  #navbar a:last-child {
+    border-bottom: none;
+  }
+
+  /* gf */
+
+  
