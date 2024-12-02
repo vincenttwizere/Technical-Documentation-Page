@@ -2,7 +2,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: Arial, sans-serif;
     color: rgb(77, 78, 83);
@@ -11,9 +10,7 @@ body {
     box-sizing: border-box;
     font-size: 15.36px;
     display: flex;
-    overflow-y: auto;
     line-height: 24px;
-
 }
 /* styles for navbar */
 #navbar {
@@ -25,13 +22,11 @@ body {
     border-right: 4px solid #99A2A2;
     z-index: 10;
     box-sizing: border-box;
-    overflow-y: auto;
-
+    overflow-y: auto; 
 }
 
 .nav-link{
     height: 24px;
-    
 }
 #main-doc {
     margin-left: 340px;
@@ -50,9 +45,19 @@ header {
     color: #333;
 }
 
-#navbar header {
-    padding-top: 20px;
-    border-bottom: 10px solid #99A2A2;
+#navbar a, #navbar header {
+    padding: 8px 30px;
+    margin-bottom: 10px; 
+    border-bottom: 1px solid #ccc; 
+  }
+
+#navbar a:last-child {
+    border-bottom: none;
+  }
+
+  #navbar header {
+    padding-top: 30px;
+    border-bottom: 1px solid #ccc;
 }
 
 p, code {
@@ -80,8 +85,6 @@ li {
     padding: 10px;
     color: #333;
     text-decoration: none;
-    margin-bottom: 30px solid red;
-
     width: 100%;
 }
 
@@ -107,18 +110,3 @@ li {
     }
 }
 
-#navbar a {
-    padding: 8px 30px;
-    margin-bottom: 10px; /* Space between the links */
-    border-bottom: 1px solid #ccc; /* Creates a line below each link */
-    
-  }
-
-  /* Optional: remove the border on the last link */
-  #navbar a:last-child {
-    border-bottom: none;
-  }
-
-  /* gf */
-
-  
